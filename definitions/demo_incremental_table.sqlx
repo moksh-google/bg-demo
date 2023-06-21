@@ -2,7 +2,7 @@ config { type: "incremental",
 uniqueKey:["fruit"]
  }
 
-SELECT CURRENT_DATE() AS ingest_time, fruit
+SELECT CURRENT_TIMESTAMP() AS ingest_time, fruit
 FROM ${ref("edw_demo", "demo_table")}
 
 ${when(incremental(), `WHERE ingest_time > (SELECT MAX(ingest_time) FROM ${self()})`) }
