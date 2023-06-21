@@ -1,5 +1,11 @@
 config {
   type: "table",
+  description: "Description of the table.",
+  columns : {
+    fruit: variables.fruit_desc,
+    count: 'Count of the fruits',
+    ingest_time: variables.ingestion_time_desc
+  }
   bigquery: { 
     partitionBy:"DATE(ingest_time)",
     partitionExpirationDays: 30,
