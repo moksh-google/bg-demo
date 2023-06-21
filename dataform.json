@@ -1,0 +1,11 @@
+{
+  "defaultSchema": "edw_demo",
+  "assertionSchema": "dataform_assertions",
+  "warehouse": "bigquery",
+  "defaultDatabase": "inbq1-joonix",
+  "defaultLocation": "US",
+   "vars": {
+  "executionSetting":"non-prod"
+}
+}
+    
