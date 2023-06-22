@@ -1,3 +1,3 @@
 config { type: "view"}
 
-SELECT * from ${ref("sample002")}
+SELECT * from ${ref("ext_table_demo")}

@@ -1,6 +1,6 @@
     config {
       type: "declaration",
       database: "inbq1-joonix",
-      schema: "new_dataset",
-      name: "sample002",
+      schema: "demo",
+      name: "ext_table_demo",
     }
