@@ -1,0 +1,7 @@
+config { type: "assertion" }
+
+SELECT
+  fruit, count(*) as duplicate_count
+FROM
+  ${ref("demo_table")}
+group by fruit having count(*)>1
