@@ -32,3 +32,8 @@ SELECT
   "bananas" AS fruit,
   0 AS count,
    CURRENT_TIMESTAMP() as ingest_time
+UNION ALL
+SELECT
+  "bananas" AS fruit,
+  10 AS count,
+   CURRENT_TIMESTAMP() as ingest_time
