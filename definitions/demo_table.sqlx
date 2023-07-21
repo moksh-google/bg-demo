@@ -1,6 +1,7 @@
 config {
   type: "table",
   description: "Description of the table.",
+  tags: ["daily", "hourly"],
   columns : {
     fruit: variables.fruit_desc,
     count: 'Count of the fruits',

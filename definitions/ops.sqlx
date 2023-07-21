@@ -1,0 +1,10 @@
+config { type: "operations",
+hasOutput: true
+ }
+
+UPDATE `inbq1-joonix.demo.sample` set string_field_1='roller software' WHERE int64_field_0 = 1;
+
+CREATE TABLE ${self()} (
+  x INT64,
+  y STRING
+);
